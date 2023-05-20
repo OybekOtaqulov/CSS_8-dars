@@ -1,0 +1,79 @@
+:root{
+    --rang: #303030;
+    --razmeri: 18px;
+    --kenglik:100%;
+    --rasm: url(../rasmlar/r6.jpg) no-repeat 100px 100px;
+}
+/*body{
+    background-color: var(--rang);
+    font-size: var(--razmeri);
+    background: var(--rasm);
+}*/
+
+.wrap{
+    width: 1200px;
+    margin: 200px auto;
+    display: block;
+}
+.row{
+    width: 100%;
+}
+.col{
+    width: 30%;
+    float: left;
+    display: block;
+    margin: 20px 15px;
+}
+.img-box{
+    width: 100%;
+    height: 250px;
+    display: block;
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;/*cover contain*/
+}
+.clear{
+    clear: both;
+}
+.text{
+    /*column-count: 5;*/
+   column-rule: 5px solid red;
+    column-gap: 20px;
+    column-width: 200px;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 240px) and (max-width: 570px){
+    .wrap{
+        width: 100%;
+        background-color: green;
+    }
+}
+@media (min-width: 570px) and (max-width: 780px) {
+    .wrap{
+        width: 100%;
+        background-color: red;
+    }
+}
+@media (min-width: 780px) and (max-width: 990px) {
+    .wrap{
+        width: 100%;
+        background-color: blue;
+    }
+}
+@media (min-width: 990px) and (max-width: 1200px){
+    .wrap{
+        width: 100%;
+        background-color: black;
+        color: white;
+    }
+}
+@media (min-width: 1200px){
+    .wrap{
+        width: 100%;
+        background-color: greenyellow;
+    }
+}
